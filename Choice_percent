@@ -43,7 +43,7 @@ def choice_percent(* n):
 #exemplo de como utilizar
 for i in range(0, 10):
    sorteio = choice_percent("item", 80, "item2", 20)
-   print(sorteio)
+   print(choice)
 
 
 
