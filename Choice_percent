@@ -18,7 +18,7 @@ def choice_percent(* n):
          try:
             soma = soma + i
          except:
-            print('Parâmetros: "item, porcentagem, item, porcentagem" \nA soma das porcentagem tem que ser exatamente = 100')
+            choice = ('Parâmetros: "item, porcentagem, item, porcentagem" \nA soma das porcentagem tem que ser exatamente = 100')
             break
          
       if soma == 100:
