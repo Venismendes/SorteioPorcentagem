@@ -14,7 +14,7 @@ def choice_percent(* n):
          c += 1
 
       soma = 0
-      for i in list_percent:
+      for i in list_percents:
          try:
             soma = soma + i
          except:
@@ -25,7 +25,7 @@ def choice_percent(* n):
          c = 0
          for i in list_percents:
             while i > 0:
-               list_choice.append(ln[c])
+               list_choice.append(list_numbers[c])
                i -= 1
             c += 1
          choice = random.choice(list_choice)
@@ -43,7 +43,7 @@ def choice_percent(* n):
 #exemplo de como utilizar
 for i in range(0, 10):
    sorteio = choice_percent("item", 80, "item2", 20)
-   print(choice)
+   print(sorteio)
 
 
 
