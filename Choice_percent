@@ -24,6 +24,7 @@ def choice_percent(* n):
       if soma == 100:
          c = 0
          for i in list_percents:
+            i * 100
             while i > 0:
                list_choice.append(list_numbers[c])
                i -= 1
@@ -39,12 +40,20 @@ def choice_percent(* n):
    return choice
 
 
-
 #exemplo de como utilizar
-for i in range(0, 10):
-   sorteio = choice_percent("item", 80, "item2", 20)
-   print(sorteio)
+for i in range(0, 1000):
+    n = choice_percent('item 1 com 0,01% de chance de ser sorteado', 0.01, 'item 2 com 99.99%', 99.99)
+    print('tentativa numero', i, '|', n)
+    if n == 'item 1 com 0,01% de chance de ser sorteado':
+        exit()
 
 
 
 
+
+
+
+
+
+
+    
